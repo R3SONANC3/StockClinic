@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f9fafb;
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Dark Mode  */
+body.dark .main-content {
+  background-color: #18181b;
+}
+
+body.dark .content-wrapper {
+  background: none;
+  color: #f3f4f6;
+}
+
+body.dark {
+  background: #18181b;
+  color: #f3f4f6;
+}
+
+body.dark .navbar-container {
+  background: #27272a;
+  border-bottom: 1px solid #3f3f46;
+}
+
+body.dark .navbar-logo .logo {
+  color: #60a5fa;
+  /* lighter blue */
+}
+
+body.dark .nav-item {
+  color: #f3f4f6;
+}
+
+body.dark .nav-item.active {
+  background: #1e293b;
+  color: #fff;
+}
+
+body.dark .nav-item:hover {
+  background: #3f3f46;
+}
+
+body.dark .navbar-notifications .icon-bell {
+  color: #fbbf24;
+}
